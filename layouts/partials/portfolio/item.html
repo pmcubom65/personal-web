@@ -1,7 +1,35 @@
-<div class="portfolio-list">
+<div class="portfolio-list" style="clear: both;">
   <a href="{{.Permalink}}">
     <div class="portfolio-container">
-      <img title="{{.Title}}" alt="{{.Title}}" src="/portfolio/{{ .Params.Thumbnail }}" />
+      <div style="display: flex; margin: 5px;">
+    <img title="{{.Title}}" alt="{{.Title}}" style=" height: 30%; width: 30%;" class="lazyload" data-src="/portfolio/sample-project/inicio.jpg" />
+    <img title="{{.Title}}" alt="{{.Title}}" style=" height: 30%; width: 30%;" class="lazyload"  data-src="/portfolio/sample-project/inicio2.jpg" />
+    <img title="{{.Title}}" alt="{{.Title}}" style=" height: 30%; width: 30%;" class="lazyload"  data-src="/portfolio/sample-project/elmapa.jpg" />
+  </div>
+    <div class="img-overlay">
+      </div>
+      <div class="portfolio-details">
+        <h2><span>{{ .Title }}</span></h2>
+        <p class="small">{{ delimit .Params.Work ", " | safeHTML }}</p>
+        <p class="small">{{ .Params.jobDate }}</p>
+      </div>
+    </div>
+  </a>
+</div>
+<div id="miiframe" >
+<!--<iframe id="ver"  class="lazyload"  data-src="https://www.youtube.com/watch?v=wP24Jm_q7do&output=embed"  width="300" height="515"
+frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>-->
+
+<iframe  width="300" height="515" class="lazyload"  data-src="https://www.youtube.com/embed/wP24Jm_q7do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 style="clear: both;"> Proyecto realizado en Laravel</h3>
+
+
+<div class="portfolio-list">
+  <a href="/miseccion/">
+    <div class="portfolio-container">
+      <img title="{{.Title}}" alt="{{.Title}}"  class="imagenes lazyload"  data-src="/miseccion/sample-project/CapturaPortal.PNG" />
       <div class="img-overlay">
       </div>
       <div class="portfolio-details">
@@ -12,3 +40,64 @@
     </div>
   </a>
 </div>
+
+
+
+
+<h3> Proyecto realizado en Java</h3>
+
+
+  <div class="portfolio-list">
+    <a href="/mijava/">
+      <div class="portfolio-container">
+        <img title="{{.Title}}" alt="{{.Title}}"  class="lazyload imagenes"  data-src="/mijava/sample-project/CapturaInicial.PNG" />
+        <div class="img-overlay">
+        </div>
+        <div class="portfolio-details">
+          <h2><span>{{ .Title }}</span></h2>
+          <p class="small">{{ delimit .Params.Work ", " | safeHTML }}</p>
+          <p class="small">{{ .Params.jobDate }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+
+
+  
+<h3> Proyecto realizado en C#</h3>
+
+
+  <div class="portfolio-list">
+    <a href="/micsharp/">
+      <div class="portfolio-container">
+        <img title="{{.Title}}" alt="{{.Title}}"  class="imagenes lazyload"  data-src="/micsharp/sample-project/CapturaInicial.PNG" />
+        <div class="img-overlay">
+        </div>
+        <div class="portfolio-details">
+          <h2><span>{{ .Title }}</span></h2>
+          <p class="small">{{ delimit .Params.Work ", " | safeHTML }}</p>
+          <p class="small">{{ .Params.jobDate }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+
+  <h3> Proyecto realizado en Odoo</h3>
+
+
+  <div class="portfolio-list">
+    <a href="/miodoo/">
+      <div class="portfolio-container">
+        <img title="{{.Title}}" alt="{{.Title}}"   class="lazyload imagenes"  data-src="/miodoo/sample-project/CapturaOdoo.PNG" />
+        <div class="img-overlay">
+        </div>
+        <div class="portfolio-details">
+          <h2><span>{{ .Title }}</span></h2>
+          <p class="small">{{ delimit .Params.Work ", " | safeHTML }}</p>
+          <p class="small">{{ .Params.jobDate }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
