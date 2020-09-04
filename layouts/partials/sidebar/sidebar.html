@@ -1,6 +1,9 @@
-<header style="{{ partial "sidebar/style" . | safeCSS }}">
 
-  <div class="intro">
+
+<header class="animate__animated animate__backInDown" style="{{ partial "sidebar/style" . | safeCSS }}" >
+
+
+  <div class="intro" >
     <div class="logo-container">
       <a href="/">
         <img  src='{{ .Site.Params.sidebar.logo | default "images/edna-west.jpg" | absURL }}' alt="Profile {{ .Title }}" class="rounded-logo">
