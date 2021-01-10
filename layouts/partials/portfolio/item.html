@@ -20,8 +20,42 @@
 <!--<iframe id="ver"  class="lazyload"  data-src="https://www.youtube.com/watch?v=wP24Jm_q7do&output=embed"  width="300" height="515"
 frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>-->
 
-<iframe  width="300" height="515" class="lazyload"  data-src="https://www.youtube.com/embed/wP24Jm_q7do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--<iframe  width="300" height="515" class="lazyload"  data-src="https://www.youtube.com/embed/wP24Jm_q7do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 </div>
+
+
+
+<h3 class="animate__animated animate__bounce">Ionic y Vue: Aplicación para crear Recordatorios con Foto</h3>
+
+
+  <div class="portfolio-list">
+    <a href="/miionic/">
+      <div class="portfolio-container">
+
+        <div style="display: flex; margin: 5px;">
+          <img title="{{.Title}}" alt="{{.Title}}" style=" height: 30%; width: 30%;" class="lazyload animate__animated animate__fadeIn animate__delay-1s"  data-src="/miionic/sample-project/tres.jpg" />
+          <img title="{{.Title}}" alt="{{.Title}}" style=" height: 30%; width: 30%;" class="lazyload animate__animated animate__fadeIn animate__delay-1s" data-src="/miionic/sample-project/uno.jpg" />
+          <img title="{{.Title}}" alt="{{.Title}}" style=" height: 30%; width: 30%;" class="lazyload animate__animated animate__fadeIn animate__delay-1s"  data-src="/miionic/sample-project/dos.jpg" />
+
+        </div>
+       <div class="img-overlay">
+        </div>
+        <div class="portfolio-details">
+          <h2><span>{{ .Title }}</span></h2>
+          <p class="small">{{ delimit .Params.Work ", " | safeHTML }}</p>
+          <p class="small">{{ .Params.jobDate }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+
+
+
+
+
+
+
 
 
 
