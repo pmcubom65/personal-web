@@ -5,6 +5,6 @@
   <p>{{ .Summary }}</p>
   <div class="read-more">
     <a alt="{{.Title}}" href="{{.Permalink}}" />{{ partial "svg" (dict "iconName" "read" "size" "18px")}}
-    Leer más</a>
+    {{.Site.Params.intro.leer}}</a>
   </div>
 </div>
