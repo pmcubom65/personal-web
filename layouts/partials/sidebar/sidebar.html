@@ -29,4 +29,13 @@
       {{ partial "sidebar/social" .}}
   </div>
 
+
+  <ul>
+    {{ range $.Site.Home.AllTranslations }}
+    <li class="test"><a class="idiomas" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+    {{ end }}
+    </ul>
+
+
+
 </header>
