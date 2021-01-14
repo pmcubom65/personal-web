@@ -1,10 +1,10 @@
 {{ partial "header" .}}
 
 <h1  id="mititulo">{{ .Site.Params.minombre.h1 }}</h1>
-<h2>Proyectos realizados</h2>
+<h2>{{.Site.Params.intro.mititular}}</h2>
 {{ .Content }}
 
-<h3>Proyecto realizado en Android</h3>
+<h3>{{.Site.Params.intro.miandroid}}</h3>
   {{ $pages := where site.RegularPages "Type" "in" .Site.Params.mainSections }}
   {{ range first 1 $pages }}
     {{ if in .Site.Params.mainSections "portfolio" }}
